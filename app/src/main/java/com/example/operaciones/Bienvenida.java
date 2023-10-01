@@ -20,9 +20,24 @@ public class Bienvenida extends AppCompatActivity {
         tvBienvenida.setText("Bienvenido  "+tvBienvenida1);
     }
 
-    public void Calcular (View v){
-        Intent lanzar = new Intent(this, Bienvenida.class);
-        lanzar.putExtra("clave", edtNombre);
+    public void iva (View v){
+        Intent lanzar = new Intent(this, iva.class);
+        startActivity(lanzar);
 
+    }
+    public void polaca (View v){
+        Intent lanzar = new Intent(this, CalculadoraPolacaInversaApp.class);
+        startActivity(lanzar);
+
+    }
+
+    public void evaluar (View v){
+        Intent lanzar = new Intent(this, evaluar.class);
+        startActivity(lanzar);
+
+    }
+
+    public void volver1 (View v){
+        this.finish();
     }
 }
