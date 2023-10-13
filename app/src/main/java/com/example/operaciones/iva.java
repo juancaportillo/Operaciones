@@ -22,7 +22,7 @@ public class iva extends AppCompatActivity {
 
     public void calcularIva (View v){
         double precio, iva, precioNuevo;
-        precio = Double.valueOf(edtPrecio-getText().toString());
+        precio = Double.valueOf(edtPrecio.getText().toString());
         iva = precio * 0.134;
         precioNuevo = precio + iva;
         tvPrecioIva.setText(String.valueOf(precioNuevo));
@@ -34,7 +34,7 @@ public class iva extends AppCompatActivity {
         tvPrecioIva.setText("");
     }
 
-    public void volver3{
+    public void volver(View v){
         this.finish();
     }
 }
