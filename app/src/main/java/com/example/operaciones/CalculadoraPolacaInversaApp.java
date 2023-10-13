@@ -30,23 +30,35 @@ public class CalculadoraPolacaInversaApp extends AppCompatActivity {
     public void btnCalcular(View v){
     String valor1=edtPrimerN.getText().toString();
     String valor2=edtSegunN.getText().toString();
-    int n1 = Integer.parseInt(valor1);
-    int n2= Integer.parseInt(valor2);
+    double n1 = Double.parseDouble(valor1);
+    double n2= Double.parseDouble(valor2);
     if (rdSuma.isChecked()==true){
-
+    double n3 = n1+n2;
+    String res=String.valueOf(n3);
+    tvRes.setText(res);
+    rdSuma.toggle();
     }
     else if (rdResta.isChecked()==true){
-
+        double n3 = n1-n2;
+        String res=String.valueOf(n3);
+        tvRes.setText(res);
+        rdResta.toggle();
     }
     else if (rdMulti.isChecked()==true){
-
+        double n3 = n1*n2;
+        String res=String.valueOf(n3);
+        tvRes.setText(res);
+        rdMulti.toggle();
     }
     else if (rdDiv.isChecked()==true){
-
+        double n3 = n1*n2;
+        String res=String.valueOf(n3);
+        tvRes.setText(res);
+        rdDiv.toggle();
     }
     else
     {
-        Toast.makeText(this, "ERROR: Seleccione una operaco[on", Toast.LENGTH_SHORT);
+        Toast.makeText(this, "ERROR: Seleccione una operacion", Toast.LENGTH_LONG).show();
     }
 
 
