@@ -16,7 +16,7 @@ public class iva extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iva);
         edtPrecio=findViewById(R.id.edtPrecio);
-        tvPrecioIva.findViewById(R.id.tvPrecioIva);
+        tvPrecioIva=findViewById(R.id.tvIva);
 
     }
 

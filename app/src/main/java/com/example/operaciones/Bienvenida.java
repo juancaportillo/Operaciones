@@ -20,7 +20,7 @@ public class Bienvenida extends AppCompatActivity {
         tvBienvenida.setText("Bienvenido  "+tvBienvenida1);
     }
 
-    public void iva (View v){
+    public void lIva (View v){
         Intent lanzar = new Intent(this, iva.class);
         startActivity(lanzar);
 

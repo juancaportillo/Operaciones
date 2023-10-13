@@ -38,7 +38,7 @@
             android:inputType="numberDecimal" />
 
         <TextView
-            android:id="@+id/tvPrecioIva"
+            android:id="@+id/tvIva"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_marginBottom="15dp"
@@ -67,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="#3F51B5"
+                android:onClick="Limpiar"
                 android:text="Limpiar" />
 
         </LinearLayout>
@@ -78,6 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:backgroundTint="#3F51B5"
+        android:onClick="volver"
         android:text="Volver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

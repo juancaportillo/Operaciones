@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        edtNombre = (EditText)findViewById(R.id.edtNombre);
+        edtNombre = findViewById(R.id.edtNombre);
     }
     public void Ingresar (View v){
         Intent lanzar = new Intent(this, Bienvenida.class);
         lanzar.putExtra("clave", edtNombre.getText().toString());
         startActivity(lanzar);
+        edtNombre.setText("");
     }
 
     public void Salir (View v){
